@@ -63,3 +63,8 @@ body {
     }
   }
   
+  .footer{
+    background-color:rgba(78, 52, 46, 0.10);
+    width: 300px;
+    padding: 60px;
+  }
