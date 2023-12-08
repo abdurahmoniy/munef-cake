@@ -1,0 +1,16 @@
+body
+
+
+
+.footer{
+    display: flex;
+    background:rgba(78, 52, 46, 0.10);
+    width: 1440px;
+height: 361px;
+flex-shrink: 0;
+
+}
+.footer-el{
+    width: 220px;
+    padding-left: 30px;
+}
