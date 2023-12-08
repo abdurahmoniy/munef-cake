@@ -1,6 +1,9 @@
+/* Common styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+}
+.body{
     padding: 0 96px;
   }
   
@@ -34,7 +37,18 @@ body {
     cursor: pointer;
   }
   
+  /* Media queries for different screen sizes */
+  @media screen and (max-width: 1200px) {
+    .body {
+      padding: 0 45px; /* Tablet */
+    }
+  }
+  
   @media screen and (max-width: 768px) {
+    .body {
+      padding: 0 24px; /* Mobile */
+    }
+  
     .nav-links {
       display: none;
     }
