@@ -76,9 +76,95 @@ body {
       padding: 10px 0;
     }
   }
+
+/* -------------------contact----------------- */
+
+
+
+
+
+
+
+
+
+
+  /* -----------------footer------------------ */
   
   .footer{
     background-color:rgba(78, 52, 46, 0.10);
-    width: 300px;
     padding: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerel{
+    width: 30%;
+  }
+
+
+  .footer-el2 ul li a{
+    color: #333;
+    text-decoration: none;
+    
+  }
+  .footer-el2 ul{
+    list-style: none;
+    /* width: 200px; */
+    
+  }
+  .footer-el2 ul li{
+    padding-top: 20px;
+   
+  }
+  .footer-el3   a{
+    color: #333;
+    text-decoration: none;
+    padding-left: 10px;
+   
+    
+
+  }
+  
+ 
+
+  .social-ins{
+    display: flex;
+    color: rgb(215, 70, 70);
+    size: 20px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    align-items: center;
+  }
+  .social-ins i{
+    font-size: 30px;
+  }
+
+  .social-tg i{
+font-size: 25px;
+  }
+
+
+  .social-tg{
+    display: flex;
+    color: #0088cc;
+    align-items: center;
+  }
+  .mobile-res{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .footer{
+        display: block;
+    }
+    .footerel{
+        width: 100%;
+    }
+    .mobile-res{
+        width: 100%;
+    }
+    
   }
