@@ -15,27 +15,37 @@
 
 <body>
     <div class="body">
-        <header class="header">
-            <a href="index.html" class="logo">
-                <img src="./img/Munef.png" alt="">
+        <div class="nav">
+            <input type="checkbox" id="nav-check" />
+            <a href="index.html" class="nav-header">
+                <div class="nav-title">
+                    <img src="./img/Munef.png" alt="" />
+                </div>
             </a>
-            <nav class="nav-links">
-                <div>
-                    <a href="#">Pishiriqlar</a>
-                    <a href="#">Biz haqimizda</a>
-                    <a href="#">Mijozlar fikri</a>
-                </di>
-                <select class="switch_lang">
+            <div class="nav-btn">
+                <select class="switch_lang_mob">
                     <option value="uzb" default>🇺🇿 Uzb</option>
                     <option value="rus">🇷🇺 Rus</option>
                 </select>
-                <a href="contact.html" class="contact_btn">Bog'lanish</a>
-
-                <div class="menu-toggle">
-                    =
-                </div>
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <nav class="nav-links">
+                <a href="#products">
+                    Pishiriqlar
+                </a>
+                <a href="#about">Biz haqimizda</a>
+                <a href="#fikrlar">Mijozlar fikri</a>
+                <select class="switch_lang_des">
+                    <option value="uzb" default>🇺🇿 Uzb</option>
+                    <option value="rus">🇷🇺 Rus</option>
+                </select>
+                <a href="contact.html" class="contact-btn">Bog'lanish</a>
             </nav>
-        </header>
+        </div>
         <section class="carousel_container">
             <div class="slider_wrapper">
                 <div class="slider">
@@ -50,14 +60,44 @@
                         alt="Image 3">
                 </div>
                 <div class="slider_nav">
-                        <a href="#slide1"></a>
-                        <a href="#slide2"></a>
-                        <a href="#slide3"></a>
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                    <a href="#slide3"></a>
                 </div>
             </div>
         </section>
-
     </div>
+    <div class="footer">
+        <div class="footerel">
+            <p><img src="./img/Munef.png" alt="#"></p>
+            <p class="tt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque alias quas sed debitis
+                sapiente aliquid est ut esse. Ratione, exercitationem.</p>
+        </div>
+        <div class="mobile-res">
+            <div class="footer-item">
+                <div>
+                    <a href="#"> Pishiriqlar</a>
+                </div>
+                <div>
+                    <a href="#"> Biz Haqimizda</a>
+                </div>
+                <div>
+                    <a href="#"> Mijozlar Fikri</a>
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <div> Bizning ijtimoiy tarmoqlar</div>
+                <div class="social-ins">
+                    <i class="fa-brands fa-instagram ins"> </i>
+                    <a href="https://www.instagram.com/__munef__/" target="_blank"> @_ _munef_ _</a>
+                </div>
+                <div class="social-tg">
+                    <i class="fa-brands fa-telegram tg"></i>
+                    <a href="https://t.me/MunefCake" target="_blank"> t.me/MunefCake </a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
