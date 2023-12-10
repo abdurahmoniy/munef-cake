@@ -414,14 +414,19 @@ body {
   }
 }
 
-/* -----------------client--------------- */
+/* -----------------fikrlar--------------- */
+
+.fikrlar{
+  margin: 50px 0;
+}
 
 .full-boxer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    margin: 50px 0;
     width: 100%;
+    gap: 40px ;
 }
 
 .box-top{
@@ -430,19 +435,13 @@ body {
     align-items: center;
     margin-bottom: 20px;
 }
-
-.comment-box:hover{
-    margin-top: 12px;
-}
-
 .comment-box{
-    width: 500px;
+    max-width: 45%;
     background: white;
     padding: 20px;
-    margin: 15px;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 3px 3px 25px rgba(102, 102, 102, 0.3);
+    border: 1px solid #33333334;
 }
 
 .Profile{
@@ -451,13 +450,13 @@ body {
 }
 
 .profile-image{
-    width: 70px;
-    height: 70px;
-    box-shadow: 2px 2px 30px rgba(44, 44, 44, 0.3);
+    width: 50px;
+    height: 50px;
+    border: #33333374 1px solid;
     overflow: hidden;
     border-radius: 50%;
     /* margin-right: 10px; */
-    margin: 20px 0 0 0;
+    /* margin: 20px 0 0 0; */
 }
 
 .profile-image img{
@@ -487,8 +486,15 @@ body {
     color: black;
 }
 
-
-
+@media (max-width: 768px) {
+  .full-boxer{
+    display: block;
+  }
+  .comment-box{
+    max-width: 100%;
+    margin: 25px 0;
+  }
+}
 
 /* -----------------footer------------------ */
 
