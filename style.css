@@ -120,7 +120,10 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .nav > .nav-links {
-    gap: 0px;
+    gap: 10px;
+  }
+  .purchase-info button {
+    width: 100%;
   }
 }
 
@@ -295,10 +298,7 @@ body {
 }
 .product-detail ul li {
   margin: 0;
-  /* list-style: ; */
-  background: url(shoes_images/checked.png) left center no-repeat;
   background-size: 18px;
-  /* padding-left: 1.7rem; */
   margin: 0.4rem 0;
   font-weight: 600;
   opacity: 0.9;
@@ -395,23 +395,21 @@ body {
   .product-content {
     padding-top: 0;
   }
-  
 }
 
 @media (max-width: 768px) {
   .card-wrapper {
     display: block;
   }
-  .product-imgs {
-    margin: 0;
-    padding: 0;
+  .img-display{
+    width: 100%;
+  }
+  .img-select{
+    width: 100%;
   }
   .card-imgs {
     display: flex;
     justify-content: center;
-  }
-  .purchase-info button {
-    width: 100%;
   }
 }
 /* -----------------footer------------------ */
