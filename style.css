@@ -3,8 +3,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-.body{
-    padding: 0 96px;
+.body {
+  padding: 0 96px;
 }
 .nav {
   width: 100%;
@@ -22,12 +22,12 @@ body {
 .nav > .nav-links {
   font-size: 18px;
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #333;
 }
@@ -46,40 +46,39 @@ body {
 .contact-mob {
   display: none !important;
 }
-.switch_lang_mob{
-    display: none;
+.switch_lang_mob {
+  display: none;
 }
 
-.switch_lang_mob, .switch_lang_des {
+.switch_lang_mob,
+.switch_lang_des {
   border: none;
 }
 
-.switch_lang_mob:focus, .switch_lang_des:focus {
+.switch_lang_mob:focus,
+.switch_lang_des:focus {
   outline: none;
 }
 @media (max-width: 768px) {
-  body {
-    padding: 0;
+  .body {
+    padding: 0 18px;
   }
-  .switch_lang_des{
+  .switch_lang_des {
     display: none;
   }
-  .switch_lang_mob{
-    display: block  ;
-}
+  .switch_lang_mob {
+    display: block;
+  }
   .contact-btn {
     width: auto;
     margin: 0 10px;
-  }
-  .nav-header {
-    padding-left: 20px;
   }
   .nav > .nav-btn {
     display: flex;
   }
   .nav > .nav-btn > label {
     display: block;
-    padding: 20px 25px;
+    padding: 20px 0 20px 20px;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -96,11 +95,13 @@ body {
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 75px;
+    left: 0;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     z-index: 10;
     text-align: center;
   }
   .nav > .nav-links > a {
+    padding: 15px 0;
     display: block;
     color: var(--light-color);
   }
@@ -118,17 +119,10 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
-    .nav > .nav-links {
-        gap:0px;
-    }
+  .nav > .nav-links {
+    gap: 0px;
+  }
 }
-
-@media screen and (max-width: 768px) {
-    .body {
-        padding: 0;
-    }
-
-} 
 
 /* -------------------contact----------------- */
 .contact {
@@ -318,10 +312,6 @@ body {
 .purchase-info input {
   width: 60px;
 }
-.purchase-info .btn {
-  cursor: pointer;
-  color: #fff;
-}
 .purchase-info .btn:first-of-type {
   background: #256eff;
 }
@@ -357,10 +347,12 @@ body {
 .purchase-info button {
   font-weight: 700;
   background: #4e342e;
-  width: 312px;
-  height: 48px;
   border-radius: 8px;
   color: #fff;
+  display: inline-flex;
+  padding: 14px 75px;
+  justify-content: center;
+  align-items: center;
 }
 .inf ul {
   display: grid;
@@ -403,6 +395,7 @@ body {
   .product-content {
     padding-top: 0;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -416,6 +409,9 @@ body {
   .card-imgs {
     display: flex;
     justify-content: center;
+  }
+  .purchase-info button {
+    width: 100%;
   }
 }
 /* -----------------footer------------------ */
@@ -431,18 +427,18 @@ body {
   width: 30%;
 }
 
-.footer-item{
-    display: block;
-    padding: 20px 0;
-    font-size: 18px;
+.footer-item {
+  display: block;
+  padding: 20px 0;
+  font-size: 18px;
 }
 
-.footer-item:nth-child(1) div:nth-child(2){
-    padding: 23px 0;
+.footer-item:nth-child(1) div:nth-child(2) {
+  padding: 23px 0;
 }
 
-.footer-item:nth-child(2) div:nth-child(2){
-    padding: 15px 0;
+.footer-item:nth-child(2) div:nth-child(2) {
+  padding: 15px 0;
 }
 
 .footer-item a {
@@ -456,7 +452,8 @@ body {
   align-items: center;
 }
 
-.social-ins i,.social-tg i {
+.social-ins i,
+.social-tg i {
   font-size: 30px;
   padding-right: 10px;
 }
