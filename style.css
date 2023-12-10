@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 .body {
   padding: 0 96px;
@@ -401,10 +402,10 @@ body {
   .card-wrapper {
     display: block;
   }
-  .img-display{
+  .img-display {
     width: 100%;
   }
-  .img-select{
+  .img-select {
     width: 100%;
   }
   .card-imgs {
@@ -485,7 +486,7 @@ body {
 
 /* Carousel */
 .carousel_container {
-  padding: 20px 0;
+  margin: 50px 0;
 }
 
 .slider_wrapper {
@@ -532,4 +533,90 @@ body {
 
 .slider_nav a:hover {
   opacity: 1;
+}
+
+/* Products */
+
+.products {
+  margin: 50px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px 0;
+  margin: 50px 0;
+}
+
+.products_heading {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pcard {
+  max-width: 230px;
+}
+
+.pcard-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.pcard-title {
+  color: var(--black, #333);
+  font-family: General Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.9;
+}
+
+.for-el {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pcard-price {
+  color: var(--Primary, #4e342e);
+  font-family: General Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pcard-cart {
+  border: 1px solid #4e342e;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.products_load{
+  display: flex;
+  justify-content: center;
+}
+
+.products_load button {
+  padding: 20px 150px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(78, 52, 46, 0.28);
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+  .pcard {
+    max-width: 170px;
+  }
 }

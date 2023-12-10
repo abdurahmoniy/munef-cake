@@ -20,3 +20,36 @@ function slideImage(){
 }
 
 window.addEventListener('resize', slideImage);
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         const targetId = this.getAttribute('href');
+//         const targetSection = document.querySelector(targetId);
+
+//         if (targetSection) {
+//             targetSection.scrollIntoView({
+//                 behavior: 'smooth'
+//             });
+//         }
+//     });
+// });
+
+// Select all anchor links that point to sections
+const navLinks = document.querySelectorAll('.nav a');
+
+// Add click event listener to each navigation link
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const targetId = link.getAttribute('href').substring(1); // Get target section ID
+        const targetSection = document.getElementById(targetId); // Get target section
+
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the target section
+        }
+    });
+});
+
