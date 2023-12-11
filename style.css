@@ -118,6 +118,7 @@ body {
     color: var(--myteal);
     padding-right: 20px;
   }
+ 
 }
 @media screen and (max-width: 1200px) {
   .nav > .nav-links {
@@ -184,6 +185,11 @@ body {
   height: 48px;
   border-radius: 8px;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .contact {
+    display: block;
+  }
 }
 /* -----------------order----------------- */
 
