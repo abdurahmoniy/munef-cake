@@ -83,6 +83,6 @@ slideshowContainer.addEventListener("mouseleave", function () {
   slideInterval = setInterval(function () {
     slideIndex++;
     showSlides(slideIndex);
-  }, 5000);
+  }, 3000);
 });
 
