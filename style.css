@@ -17,6 +17,19 @@ body {
 .body {
   padding: 0 96px;
 }
+#preloader{
+  background: #fff url(./img/loading.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 a {
   text-decoration: none;
 }
@@ -71,6 +84,7 @@ a {
 }
 .switch_lang_mob {
   display: none;
+  background-color: transparent;
 }
 
 .switch_lang_mob,
@@ -213,7 +227,7 @@ a {
   .contact {
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
   }
   .boglanish,
   .aloqa input,
@@ -734,57 +748,6 @@ a {
     max-height: 200px;
   }
 }
-/* 
-.carousel_container {
-  margin: 50px 0;
-}
-
-.slider_wrapper {
-  position: relative;
-  max-width: 1248px;
-  max-height: 500px;
-  margin: 0 auto;
-}
-
-.slider {
-  display: flex;
-  aspect-ratio: 16/6;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 1rem;
-}
-
-.slider img {
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.slider_nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: -1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider_nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: gray;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-
-.slider_nav a:hover {
-  opacity: 1;
-} */
-
 /* Products */
 
 .products {
@@ -922,7 +885,7 @@ a {
     font-size: 27px;
   }
   .pcard {
-    max-width: 170px;
+    max-width: 182px;
   }
   .products_load button {
     width: 100%;
