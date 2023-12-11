@@ -20,3 +20,13 @@ function slideImage(){
 }
 
 window.addEventListener('resize', slideImage);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('productLink').addEventListener('click', function () {
+        document.getElementById('loadingGif').style.display = 'block';
+    });
+    window.addEventListener('load', function () {
+        document.getElementById('loadingGif').style.display = 'none';
+    });
+});

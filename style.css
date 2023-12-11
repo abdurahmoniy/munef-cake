@@ -191,6 +191,11 @@ a{
 @media (max-width: 768px) {
   .contact {
     display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .boglanish,.aloqa input, .aloqa, .aloqa button{
+    width: 100%;
   }
 }
 /* -----------------order----------------- */
@@ -807,5 +812,23 @@ a{
   }
   .about img {
     width: 100%;
+  }
+}
+
+/* breadcrumbs */
+
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+
+.breadcrumbs .bc_item1 {
+  color: #333333b7;
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs{
+    display: none;
   }
 }
