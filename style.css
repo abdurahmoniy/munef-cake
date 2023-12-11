@@ -25,6 +25,11 @@ body {
   position: fixed;
   z-index: 100;
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 a {
   text-decoration: none;
 }
