@@ -79,6 +79,7 @@ a {
 }
 .switch_lang_mob {
   display: none;
+  background-color: transparent;
 }
 
 .switch_lang_mob,
@@ -221,7 +222,7 @@ a {
   .contact {
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
   }
   .boglanish,
   .aloqa input,
