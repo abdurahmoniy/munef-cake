@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
+
     <div class="body">
         <div class="nav">
             <input type="checkbox" id="nav-check" />
@@ -48,13 +50,16 @@
         </div>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="https://images.sbs.com.au/dims4/default/c00db94/2147483647/strip/true/crop/1250x703+0+46/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2Fao_108_group-crop-for-confetti-cake_0.jpg" style="width:100%">
+                <img src="https://images.sbs.com.au/dims4/default/c00db94/2147483647/strip/true/crop/1250x703+0+46/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2Fao_108_group-crop-for-confetti-cake_0.jpg"
+                    style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="https://preppykitchen.com/wp-content/uploads/2022/05/Naked-Cake-Recipe-Card.jpg" style="width:100%">
+                <img src="https://preppykitchen.com/wp-content/uploads/2022/05/Naked-Cake-Recipe-Card.jpg"
+                    style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="https://mojo.generalmills.com/api/public/content/fYX6Lw1vQ0qhBLaxWAVpCA_gmi_hi_res_jpeg.jpeg?v=99bd1c43&t=466b54bb264e48b199fc8e83ef1136b4" style="width:100%">
+                <img src="https://mojo.generalmills.com/api/public/content/fYX6Lw1vQ0qhBLaxWAVpCA_gmi_hi_res_jpeg.jpeg?v=99bd1c43&t=466b54bb264e48b199fc8e83ef1136b4"
+                    style="width:100%">
             </div>
         </div>
         <br>
@@ -63,26 +68,6 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <!-- <section class="carousel_container">
-            <div class="slider_wrapper">
-                <div class="slider">
-                    <img id="slide1"
-                        src="https://images.sbs.com.au/dims4/default/c00db94/2147483647/strip/true/crop/1250x703+0+46/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2Fao_108_group-crop-for-confetti-cake_0.jpg"
-                        alt="Image 1">
-                    <img id="slide2"
-                        src="https://preppykitchen.com/wp-content/uploads/2022/05/Naked-Cake-Recipe-Card.jpg"
-                        alt="Image 2">
-                    <img id="slide3"
-                        src="https://mojo.generalmills.com/api/public/content/fYX6Lw1vQ0qhBLaxWAVpCA_gmi_hi_res_jpeg.jpeg?v=99bd1c43&t=466b54bb264e48b199fc8e83ef1136b4"
-                        alt="Image 3">
-                </div>
-                <div class="slider_nav">
-                    <a href="#slide1"></a>
-                    <a href="#slide2"></a>
-                    <a href="#slide3"></a>
-                </div>
-            </div>
-        </section> -->
         <div class="products" id="products">
             <div class="products_heading">
                 Mashhur pishiriqlar
@@ -633,9 +618,6 @@
                     Hammasini ko’rish
                 </button>
             </div>
-            <div class="products_loading" id="loadingGif" style="display: none;">
-                <img src="https://motiongraphicsphoebe.files.wordpress.com/2018/10/giphy.gif" alt="Loading...">
-            </div>
         </div>
         <div class="single_content">
             <img class="sc_img" src="./img/single_cont.png" alt="">
@@ -832,6 +814,13 @@
             </div>
         </div>
     </div>
+    <script>
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 

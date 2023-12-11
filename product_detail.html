@@ -12,9 +12,10 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
 
     <div class="body">
-        
+
         <div class="nav">
             <input type="checkbox" id="nav-check" />
             <a href="index.html" class="nav-header">
@@ -34,11 +35,11 @@
                 </label>
             </div>
             <nav class="nav-links">
-                <a href="#products">
+                <a href="index.html#products">
                     Pishiriqlar
                 </a>
-                <a href="#about">Biz haqimizda</a>
-                <a href="#fikrlar">Mijozlar fikri</a>
+                <a href="index.html#about">Biz haqimizda</a>
+                <a href="index.html#fikrlar">Mijozlar fikri</a>
                 <select class="switch_lang_des">
                     <option value="uzb" default>🇺🇿 Uzb</option>
                     <option value="rus">🇷🇺 Rus</option>
@@ -98,15 +99,15 @@
                     </div>
                     <!-- card right -->
                     <div class="product-content">
-                        
+
                         <div class="product-detail">
                             <h1>Oreo </h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga
                                 tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at
                                 sequi ipsa!</p>
-                                <h3 class="tar"> Tarkibi</h3>
+                            <h3 class="tar"> Tarkibi</h3>
                             <div class="inf">
-                                
+
                                 <ul>
                                     <li>Lorem, ipsum</li>
                                     <li>Lorem, ipsum</li>
@@ -120,15 +121,15 @@
                                     <li>Lorem, ipsum </li>
                                 </ul>
                             </div>
-                          
+
                         </div>
 
                         <div class="purchase-info">
                             <div class="narx">
                                 <p>Narx: <span class="narx2">23,000 so'm</span></p>
                             </div>
-                           
-                            <button type="button" >Buyurt berish</button>
+
+                            <button type="button">Buyurt berish</button>
                         </div>
                     </div>
                 </div>
@@ -144,13 +145,13 @@
         <div class="mobile-res">
             <div class="footer-item">
                 <div>
-                    <a href="#products"> Pishiriqlar</a>
+                    <a href="index.html#products"> Pishiriqlar</a>
                 </div>
                 <div>
-                    <a href="#about"> Biz Haqimizda</a>
+                    <a href="index.html#about"> Biz Haqimizda</a>
                 </div>
                 <div>
-                    <a href="#kirlar"> Mijozlar Fikri</a>
+                    <a href="index.html#kirlar"> Mijozlar Fikri</a>
                 </div>
             </div>
 
@@ -167,6 +168,14 @@
             </div>
         </div>
     </div>
+    <script>
+        //loader
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 
