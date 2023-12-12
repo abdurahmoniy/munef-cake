@@ -10,6 +10,7 @@
 
 :root {
   --primary-color: #333;
+  --secondary:#4E342E;
 }
 
 body {
@@ -83,7 +84,7 @@ a {
   display: none;
 }
 
-.nav .nav-title {
+.nav-title {
   font-family: Kapakana Regular;
   color: var(--black, #333);
   font-size: 56px;
@@ -432,22 +433,27 @@ a {
 .inf ul {
   display: grid;
   grid-template-columns: auto auto;
+ 
 }
 .inf ul li {
   padding: 5px 0;
-  color: rgb(99, 99, 99);
+  color: var(--primary-color);
+  opacity: 0.8;
 }
 .narx {
   padding: 20px 0;
+  color: var(--primary-color);
 }
 .narx2 {
   font-size: 20px;
   padding: 10px;
   font-weight: bold;
+  color: var(--primary-color);
 }
 .tar {
   font-size: 20px;
   font-weight: bold;
+  color: var(--primary-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -529,6 +535,7 @@ a {
 
 .fikrlar {
   margin: 50px 0;
+  color: var(--primary-color);
 }
 
 .full-boxer {
@@ -582,7 +589,7 @@ a {
 }
 
 .Name strong {
-  color: black;
+  color: var(--primary-color);
   font-size: 18px;
 }
 
@@ -592,7 +599,8 @@ a {
 }
 
 .comment p {
-  color: black;
+  color: var(--primary-color);
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -633,7 +641,7 @@ a {
 }
 
 .footer-item a {
-  color: #333;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -833,6 +841,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: var(--primary-color);
 }
 
 .pcard {
@@ -846,7 +855,7 @@ img.pcard-img {
 }
 
 .pcard-title {
-  color: var(--black, #333);
+  color: var(--primary-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -862,7 +871,7 @@ img.pcard-img {
 }
 
 .pcard-price {
-  color: var(--Primary, #4e342e);
+  color: var(--secondary);
   font-size: 21px;
   font-style: normal;
   font-weight: 600;
@@ -916,6 +925,7 @@ img.pcard-img {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: var(--primary-color);
 }
 
 .sc_desc {
@@ -923,6 +933,8 @@ img.pcard-img {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: var(--primary-color);
+  opacity: 0.8;
   margin: 25px 0;
 }
 
@@ -1003,6 +1015,10 @@ img.pcard-img {
   }
 }
 /* ------------------------ About----------------- */
+.about-item{
+  color: var(--primary-color);
+}
+
 
 .about-main {
   display: flex;
@@ -1045,6 +1061,11 @@ img.pcard-img {
 .about > .about-main > div > .owner p{
   font-style: italic;
 }
+ .desc3{
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
 
 @media (max-width: 1200px) {
   .about .about-main {
@@ -1062,7 +1083,10 @@ img.pcard-img {
   display: flex;
   align-items: center;
   gap: 0 5px;
-  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--primary-color);
 }
 
 .breadcrumbs .bc_item1 {
