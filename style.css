@@ -193,6 +193,9 @@ a {
   .body {
     padding: 0 32px;
   }
+  .nav {
+    padding: 0 40px;
+  }
   .nav .nav-links {
     gap: 10px;
   }
