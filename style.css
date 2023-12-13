@@ -8,6 +8,14 @@
     url("./fonts/Kapakana[wght].woff") format("woff");
 }
 
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('./fonts/GeneralSans-Variable.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
 :root {
   --primary-color: #333;
   --secondary: #4e342e;
@@ -15,7 +23,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: GeneralSans-Variable;
   scroll-behavior: smooth;
   background: #fff;
 }
