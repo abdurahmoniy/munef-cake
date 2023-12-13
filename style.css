@@ -10,7 +10,7 @@
 
 :root {
   --primary-color: #333;
-  --secondary:#4E342E;
+  --secondary: #4e342e;
 }
 
 body {
@@ -47,7 +47,7 @@ a {
     background: #fff;
     top: 0;
     margin-bottom: 50px;
-}
+  }
 }
 .header {
   z-index: 100;
@@ -121,7 +121,7 @@ a {
   .body {
     padding: 0 18px;
   }
-  .nav{
+  .nav {
     padding: 0 18px;
   }
   .switch_lang_des {
@@ -182,6 +182,9 @@ a {
   }
 }
 @media screen and (max-width: 1200px) {
+  .body {
+    padding: 0 32px;
+  }
   .nav .nav-links {
     gap: 10px;
   }
@@ -433,7 +436,6 @@ a {
 .inf ul {
   display: grid;
   grid-template-columns: auto auto;
- 
 }
 .inf ul li {
   padding: 5px 0;
@@ -906,6 +908,7 @@ img.pcard-img {
   border: 2px solid #33333365;
   max-width: 1000px;
   margin: 100px auto;
+  max-height: 256px;
 }
 
 .single_content .sc_img_m {
@@ -913,6 +916,7 @@ img.pcard-img {
 }
 .single_content .sc_img {
   display: block;
+  width: 50%;
 }
 
 .sc_detail {
@@ -951,10 +955,16 @@ img.pcard-img {
     grid-template-columns: auto auto auto;
     gap: 20px 30px;
   }
+  .sc_detail {
+    padding: 20px 30px;
+  }
+  .sc_desc{
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 768px) {
-  .single_content{
+  .single_content {
     max-height: 600px;
   }
   .cards {
@@ -983,11 +993,11 @@ img.pcard-img {
     max-height: 606px;
   }
   .sc_detail {
-    width: 80%;
-    padding: 20px;
+    padding:40px 20px;
+    width: 90%;
     height: 50%;
   }
-  .sc_img_box{
+  .sc_img_box {
     height: 300px;
     width: 100%;
   }
@@ -1015,10 +1025,9 @@ img.pcard-img {
   }
 }
 /* ------------------------ About----------------- */
-.about-item{
+.about-item {
   color: var(--primary-color);
 }
-
 
 .about-main {
   display: flex;
@@ -1029,7 +1038,7 @@ img.pcard-img {
   width: 50%;
 }
 
-.about .address{
+.about .address {
   display: block;
   margin: 0;
   padding: 0;
@@ -1046,7 +1055,6 @@ img.pcard-img {
   height: 50%;
 }
 
-
 .about .phone {
   display: flex;
   height: 50%;
@@ -1058,14 +1066,13 @@ img.pcard-img {
   padding: 1px 0;
 }
 
-.about > .about-main > div > .owner p{
+.about > .about-main > div > .owner p {
   font-style: italic;
 }
- .desc3{
+.desc3 {
   color: var(--primary-color);
   opacity: 0.8;
 }
-
 
 @media (max-width: 1200px) {
   .about .about-main {
