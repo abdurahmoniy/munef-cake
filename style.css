@@ -180,7 +180,7 @@ a {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(40% - 50px);
+    height: calc(45% - 50px);
     overflow-y: auto;
   }
   .nav-links a i {
@@ -801,7 +801,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .prev,
   .next,
   .text {
@@ -833,6 +833,11 @@ a {
   }
   .slideshow-container img {
     max-height: 150px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .slideshow-container{
+    margin-top: 100px;
   }
 }
 /* Products */
