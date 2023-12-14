@@ -25,10 +25,18 @@
                 </div>
             </a>
             <div class="nav-btn">
-                <select class="switch_lang_mob">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_mob">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang2">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions2" style="display: none;">
+                            <div class="sl1" id="uzbLang2"><img src="./img/uzbflag.png" alt="">Uzb</div>
+                            <div class="sl1" id="rusLang2"><img src="./img/rusflag.png" alt="">Rus</div>
+                            <div class="sl1" id="engLang2"><img src="./img/engflag.png" alt="">Eng</div>
+                        </div>
+                    </div>
+                </div>
                 <label for="nav-check">
                     <span></span>
                     <span></span>
@@ -41,35 +49,43 @@
                 </a>
                 <a href="#about">Biz haqimizda</a>
                 <a href="#fikrlar">Mijozlar fikri</a>
-                <select class="switch_lang_des">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_des">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions" style="display: none;">
+                            <div class="sl1" id="uzbLang"><img src="./img/uzbflag.png" alt="">Uzb</div>
+                            <div class="sl2" id="rusLang"><img src="./img/rusflag.png" alt="">Rus</div>
+                            <div class="sl3" id="engLang"><img src="./img/engflag.png" alt="">Eng</div>
+                        </div>
+                    </div>
+                </div>
                 <a href="contact.html" class="contact-btn">Bog'lanish</a>
             </nav>
         </div>
     </div>
     <div class="body">
+
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="https://images.sbs.com.au/dims4/default/c00db94/2147483647/strip/true/crop/1250x703+0+46/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2Fao_108_group-crop-for-confetti-cake_0.jpg"
-                    style="width:100%">
+                <img src="./img/carousel2.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="https://preppykitchen.com/wp-content/uploads/2022/05/Naked-Cake-Recipe-Card.jpg"
-                    style="width:100%">
+                <img src="./img/carousel1.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="https://mojo.generalmills.com/api/public/content/fYX6Lw1vQ0qhBLaxWAVpCA_gmi_hi_res_jpeg.jpeg?v=99bd1c43&t=466b54bb264e48b199fc8e83ef1136b4"
-                    style="width:100%">
+                <img src="./img/carousel3.jpg" style="width:100%">
             </div>
         </div>
         <br>
+
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+
         <div class="products" id="products">
             <div class="products_heading">
                 Mashhur pishiriqlar
@@ -77,7 +93,7 @@
             <div class="cards">
                 <div class="pcard">
                     <a href="product_detail.html" id="productLink">
-                            <img src="./img/Rectangle 2.png" class="pcard-img" alt="">
+                        <img src="./img/Rectangle 2.png" class="pcard-img" alt="">
                     </a>
                     <div class="pcard-title">
                         San sebastian
@@ -621,6 +637,7 @@
                 </button>
             </div>
         </div>
+
         <div class="single_content">
             <img class="sc_img" src="./img/single_cont.png" alt="">
             <div class="sc_detail">
@@ -642,10 +659,11 @@
         </div>
 
         <div class="about" id="about">
-            <h1 class="about-item" >Biz Haqimizda</h1>
+            <h1 class="about-item">Biz Haqimizda</h1>
             <div class="about-main">
                 <div class="">
-                    <p class="desc3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class="desc3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
                         labore et dolore magna aliqua. Dui nunc mattis enim ut tellus. Sem integer vitae justo eget
                         magna fermentum iaculis. Viverra justo nec ultrices dui. Et malesuada fames ac turpis egestas
                         sed. Cum sociis natoque penatibus et magnis dis parturient. Purus faucibus ornare suspendisse
@@ -830,7 +848,6 @@
         </div>
     </div>
     <script>
-
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function () {
             loader.style.display = "none";

@@ -144,10 +144,11 @@ a {
   }
   .nav > .nav-btn {
     display: flex;
+    align-items: center;
   }
   .nav > .nav-btn > label {
     display: block;
-    padding: 20px 0 20px 20px;
+    padding: 30px 0 20px 20px;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -189,9 +190,9 @@ a {
     padding-right: 20px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .body {
-    padding: 0 32px;
+    padding: 90px 32px 0 32px;
   }
   .nav {
     padding: 0 40px;
@@ -1139,8 +1140,31 @@ img.pcard-img {
   color: #333333b7;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .breadcrumbs {
     display: none;
   }
+}
+
+
+/* switch language */
+
+.switch_lang{
+  width: 70px;
+}
+.selected_lang, .sl1, .sl2, .sl3{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.switch_lang img {
+  width: 32px;
+  height: 32px;
+}
+.switch_lang .selection_lang{
+  position: absolute;
+  margin: 10px 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
 }
