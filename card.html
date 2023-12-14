@@ -12,6 +12,8 @@
     
     </head>
 <body>
+    <div id="preloader"></div>
+
 
     <div class="header">
         <div class="nav">
@@ -22,10 +24,18 @@
                 </div>
             </a>
             <div class="nav-btn">
-                <select class="switch_lang_mob">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_mob">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang2">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions2" style="display: none;">
+                            <div class="sl1" id="uzbLang2"><img src="./img/uzbflag.png" alt="">Uzb</div>
+                            <div class="sl1" id="rusLang2"><img src="./img/rusflag.png" alt="">Rus</div>
+                            <div class="sl1" id="engLang2"><img src="./img/engflag.png" alt="">Eng</div>
+                        </div>
+                    </div>
+                </div>
                 <label for="nav-check">
                     <span></span>
                     <span></span>
@@ -33,15 +43,23 @@
                 </label>
             </div>
             <nav class="nav-links">
-                <a href="index.html#products">
+                <a href="index.html">
                     Pishiriqlar
                 </a>
-                <a href="index.html#about">Biz haqimizda</a>
-                <a href="index.html#fikrlar">Mijozlar fikri</a>
-                <select class="switch_lang_des">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <a href="#about">Biz haqimizda</a>
+                <a href="#fikrlar">Mijozlar fikri</a>
+                <div class="switch_lang_des">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions" style="display: none;">
+                            <div class="sl1" id="uzbLang"><img src="./img/uzbflag.png" alt="">Uzb</div>
+                            <div class="sl2" id="rusLang"><img src="./img/rusflag.png" alt="">Rus</div>
+                            <div class="sl3" id="engLang"><img src="./img/engflag.png" alt="">Eng</div>
+                        </div>
+                    </div>
+                </div>
                 <a href="contact.html" class="contact-btn">Bog'lanish</a>
             </nav>
         </div>
