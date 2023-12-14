@@ -86,6 +86,10 @@ a {
   display: inline-block;
   text-decoration: none;
   color: var(--primary-color);
+
+  font-size: 16px;
+  font-weight: 500;
+
 }
 
 .nav #nav-check {
@@ -98,6 +102,20 @@ a {
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+
+.contact-name{
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact-item{
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -319,6 +337,14 @@ a {
 .img-item:hover {
   opacity: 0.8;
 }
+.product-name{
+  color: var(--primary-color);
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .product-title {
   font-size: 3rem;
   text-transform: capitalize;
@@ -456,17 +482,24 @@ a {
 }
 .narx {
   padding: 20px 0;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   color: var(--primary-color);
 }
 .narx2 {
-  font-size: 20px;
-  padding: 10px;
-  font-weight: bold;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   color: var(--primary-color);
 }
 .tar {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   color: var(--primary-color);
 }
 
@@ -654,7 +687,11 @@ a {
 .footer-item {
   display: block;
   padding: 20px 0;
-  font-size: 18px;
+  
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .footer-item:nth-child(1) div:nth-child(2) {
@@ -668,7 +705,11 @@ a {
 .footer-item a {
   color: var(--primary-color);
   text-decoration: none;
-}
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
 
 .social-ins {
   display: flex;
@@ -930,14 +971,20 @@ img.pcard-img {
 .products_load {
   display: flex;
   justify-content: center;
+ 
+  
 }
 
-.products_load button {
+.products_load .products-btn {
   padding: 15px 120px;
   border-radius: 12px;
   font-size: 20px;
   border: none;
   background: rgba(78, 52, 46, 0.28);
+  color: var(--primary-color);
+  font-weight: 500;
+
+
 }
 
 .single_content {
@@ -1063,8 +1110,28 @@ img.pcard-img {
   }
 }
 /* ------------------------ About----------------- */
+.about-name{
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
 .about-item {
   color: var(--primary-color);
+
+
+}
+
+.about-heading{
+  color: var(--primary-color);
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .about-main {
