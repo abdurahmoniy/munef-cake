@@ -82,7 +82,7 @@ a {
   gap: 50px;
 }
 
-.nav .nav-links a {
+.nav .nav-links > a {
   display: inline-block;
   text-decoration: none;
   color: var(--primary-color);
@@ -342,63 +342,9 @@ a {
   font-size: 47px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
-.product-title {
-  font-size: 3rem;
-  text-transform: capitalize;
-  font-weight: 700;
-  position: relative;
-  color: #12263a;
-  margin: 1rem 0;
-}
-.product-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 80px;
-  background: #12263a;
-}
-.product-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.9rem;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  background: #256eff;
-  color: #fff;
-  padding: 0 0.3rem;
-  transition: all 0.5s ease;
-}
-.product-link:hover {
-  opacity: 0.9;
-}
-.product-rating {
-  color: #ffc107;
-}
-.product-rating span {
-  font-weight: 600;
-  color: #252525;
-}
-.product-price {
-  margin: 1rem 0;
-  font-size: 1rem;
-  font-weight: 700;
-}
-.product-price span {
-  font-weight: 400;
-}
-.last-price span {
-  color: #f64749;
-  text-decoration: line-through;
-}
-.new-price span {
-  color: #256eff;
-}
 .product-detail h2 {
   text-transform: capitalize;
   color: #12263a;
@@ -481,7 +427,7 @@ a {
   opacity: 0.8;
 }
 .narx {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
@@ -1219,7 +1165,7 @@ img.pcard-img {
 .switch_lang{
   width: 70px;
 }
-.selected_lang, .sl1, .sl2, .sl3{
+.selected_lang, .sl1, .sl2{
   display: flex;
   align-items: center;
   gap: 10px;

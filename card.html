@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Munef</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munef</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
 <body>
 
     <div class="header">
@@ -22,10 +24,17 @@
                 </div>
             </a>
             <div class="nav-btn">
-                <select class="switch_lang_mob">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_mob">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang2">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions2" style="display: none;">
+                            <a href="card.html" class="sl1" id="uzbLang2"><img src="./img/uzbflag.png" alt="">Uzb</a>
+                            <a href="./rus/card.html" class="sl2" id="rusLang2"><img src="./img/rusflag.png" alt="">Rus</a>
+                        </div>
+                    </div>
+                </div>
                 <label for="nav-check">
                     <span></span>
                     <span></span>
@@ -38,15 +47,21 @@
                 </a>
                 <a href="index.html#about">Biz haqimizda</a>
                 <a href="index.html#fikrlar">Mijozlar fikri</a>
-                <select class="switch_lang_des">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_des">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions" style="display: none;">
+                            <a href="card.html" class="sl1" id="uzbLang"><img src="./img/uzbflag.png" alt="">Uzb</a>
+                            <a href="./rus/card.html" class="sl2" id="rusLang"><img src="./img/rusflag.png" alt="">Rus</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="contact.html" class="contact-btn">Bog'lanish</a>
             </nav>
         </div>
     </div>
-
 
     <div class="body">
         <div class="products" id="products">
@@ -56,7 +71,7 @@
             <div class="cards">
                 <div class="pcard">
                     <a href="product_detail.html" id="productLink">
-                            <img src="./img/Rectangle 2.png" class="pcard-img" alt="">
+                        <img src="./img/Rectangle 2.png" class="pcard-img" alt="">
                     </a>
                     <div class="pcard-title">
                         San sebastian
@@ -89,7 +104,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 3.png" class="pcard-img" alt="">
@@ -125,7 +140,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 4.png" class="pcard-img" alt="">
@@ -161,7 +176,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 5.png" class="pcard-img" alt="">
@@ -197,7 +212,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 6.png" class="pcard-img" alt="">
@@ -233,8 +248,8 @@
                         </a>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 7.png" class="pcard-img" alt="">
@@ -270,7 +285,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 8.png" class="pcard-img" alt="">
@@ -306,7 +321,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 9.png" class="pcard-img" alt="">
@@ -342,7 +357,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 10.png" class="pcard-img" alt="">
@@ -413,7 +428,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 12.png" class="pcard-img" alt="">
@@ -449,7 +464,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 13.png" class="pcard-img" alt="">
@@ -520,7 +535,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 15.png" class="pcard-img" alt="">
@@ -556,7 +571,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="pcard">
                     <a href="product_detail.html">
                         <img src="./img/Rectangle 16.png" class="pcard-img" alt="">
@@ -592,7 +607,7 @@
                         </a>
                     </div>
                 </div>
-    
+
             </div>
             <!-- <div class="products_load">
                 <button>
@@ -601,7 +616,7 @@
             </div> -->
         </div>
     </div>
-   
+
 
     <div class="footer">
         <div class="footerel">
@@ -617,8 +632,8 @@
                     <a href="index.html#products">
                         Pishiriqlar
                     </a>
-                   
-                   
+
+
                 </div>
                 <div>
                     <a href="index.html#about">Biz haqimizda</a>
@@ -672,7 +687,68 @@
         window.addEventListener("load", function () {
             loader.style.display = "none";
         });
+
+        // languageSwitcher.js
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.getElementById('selectedLang').addEventListener('click', function () {
+                var languageOptions = document.getElementById('languageOptions');
+                if (languageOptions.style.display === 'none') {
+                    languageOptions.style.display = 'block';
+                } else {
+                    languageOptions.style.display = 'none';
+                }
+            });
+
+            document.getElementById('uzbLang').addEventListener('click', function () {
+                changeLanguage('uzbflag.png', 'Uzb');
+            });
+
+            document.getElementById('rusLang').addEventListener('click', function () {
+                changeLanguage('rusflag.png', 'Rus');
+            });
+
+            document.getElementById('engLang').addEventListener('click', function () {
+                changeLanguage('engflag.png', 'Eng');
+            });
+
+            function changeLanguage(flagImage, languageText) {
+                document.getElementById('selectedLang').innerHTML = '<img src="./img/' + flagImage + '" alt="">' + languageText;
+                document.getElementById('languageOptions').style.display = 'none';
+            }
+        });
+
+
+        //language switcher2
+
+        document.getElementById('selectedLang2').addEventListener('click', function () {
+            var languageOptions2 = document.getElementById('languageOptions2');
+            if (languageOptions2.style.display === 'none') {
+                languageOptions2.style.display = 'block';
+            } else {
+                languageOptions2.style.display = 'none';
+            }
+        });
+
+        document.getElementById('uzbLang2').addEventListener('click', function () {
+            changeLanguage2('uzbflag.png', 'Uzb');
+        });
+
+        document.getElementById('rusLang2').addEventListener('click', function () {
+            changeLanguage2('rusflag.png', 'Rus');
+        });
+
+        document.getElementById('engLang2').addEventListener('click', function () {
+            changeLanguage2('engflag.png', 'Eng');
+        });
+
+        function changeLanguage2(flagImage2, languageText2) {
+            document.getElementById('selectedLang2').innerHTML = '<img src="./img/' + flagImage2 + '" alt="">' + languageText2;
+            document.getElementById('languageOptions2').style.display = 'none';
+        }
     </script>
     <script src="main.js"></script>
 </body>
+
 </html>

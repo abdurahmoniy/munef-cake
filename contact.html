@@ -22,10 +22,17 @@
                 </div>
             </a>
             <div class="nav-btn">
-                <select class="switch_lang_mob">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_mob">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang2">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions2" style="display: none;">
+                            <a href="contact.html" class="sl1" id="uzbLang2"><img src="./img/uzbflag.png" alt="">Uzb</a>
+                            <a href="./rus/contact.html" class="sl2" id="rusLang2"><img src="./img/rusflag.png" alt="">Rus</a>
+                        </div>
+                    </div>
+                </div>
                 <label for="nav-check">
                     <span></span>
                     <span></span>
@@ -38,10 +45,17 @@
                 </a>
                 <a href="index.html#about">Biz haqimizda</a>
                 <a href="index.html#fikrlar">Mijozlar fikri</a>
-                <select class="switch_lang_des">
-                    <option value="uzb" default>🇺🇿 Uzb</option>
-                    <option value="rus">🇷🇺 Rus</option>
-                </select>
+                <div class="switch_lang_des">
+                    <div class="switch_lang">
+                        <div class="selected_lang" id="selectedLang">
+                            <img src="./img/uzbflag.png" alt="">Uzb
+                        </div>
+                        <div class="selection_lang" id="languageOptions" style="display: none;">
+                            <a href="contact.html" class="sl1" id="uzbLang"><img src="./img/uzbflag.png" alt="">Uzb</a>
+                            <a href="./rus/contact.html" class="sl2" id="rusLang"><img src="./img/rusflag.png" alt="">Rus</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="contact.html" class="contact-btn">Bog'lanish</a>
             </nav>
         </div>
@@ -55,7 +69,8 @@
         <div class="contact">
             <div class="boglanish">
                 <h2 class="contact-name">Bog'lanish ma'lumotlari</h2>
-                <div class="desc3">Shaxsiy raqam va ismingizni bizga yozib qoldiring va biz o'zimiz sizga aloqaga chiqamiz</div>
+                <div class="desc3">Shaxsiy raqam va ismingizni bizga yozib qoldiring va biz o'zimiz sizga aloqaga
+                    chiqamiz</div>
                 <div class="call">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
                         <path
@@ -95,8 +110,8 @@
                     <a href="index.html#products">
                         Pishiriqlar
                     </a>
-                   
-                   
+
+
                 </div>
                 <div>
                     <a href="index.html#about">Biz haqimizda</a>
@@ -151,6 +166,66 @@
         window.addEventListener("load", function () {
             loader.style.display = "none";
         });
+
+        // languageSwitcher.js
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.getElementById('selectedLang').addEventListener('click', function () {
+                var languageOptions = document.getElementById('languageOptions');
+                if (languageOptions.style.display === 'none') {
+                    languageOptions.style.display = 'block';
+                } else {
+                    languageOptions.style.display = 'none';
+                }
+            });
+
+            document.getElementById('uzbLang').addEventListener('click', function () {
+                changeLanguage('uzbflag.png', 'Uzb');
+            });
+
+            document.getElementById('rusLang').addEventListener('click', function () {
+                changeLanguage('rusflag.png', 'Rus');
+            });
+
+            document.getElementById('engLang').addEventListener('click', function () {
+                changeLanguage('engflag.png', 'Eng');
+            });
+
+            function changeLanguage(flagImage, languageText) {
+                document.getElementById('selectedLang').innerHTML = '<img src="./img/' + flagImage + '" alt="">' + languageText;
+                document.getElementById('languageOptions').style.display = 'none';
+            }
+        });
+
+
+        //language switcher2
+
+        document.getElementById('selectedLang2').addEventListener('click', function () {
+            var languageOptions2 = document.getElementById('languageOptions2');
+            if (languageOptions2.style.display === 'none') {
+                languageOptions2.style.display = 'block';
+            } else {
+                languageOptions2.style.display = 'none';
+            }
+        });
+
+        document.getElementById('uzbLang2').addEventListener('click', function () {
+            changeLanguage2('uzbflag.png', 'Uzb');
+        });
+
+        document.getElementById('rusLang2').addEventListener('click', function () {
+            changeLanguage2('rusflag.png', 'Rus');
+        });
+
+        document.getElementById('engLang2').addEventListener('click', function () {
+            changeLanguage2('engflag.png', 'Eng');
+        });
+
+        function changeLanguage2(flagImage2, languageText2) {
+            document.getElementById('selectedLang2').innerHTML = '<img src="./img/' + flagImage2 + '" alt="">' + languageText2;
+            document.getElementById('languageOptions2').style.display = 'none';
+        }
     </script>
     <script src="main.js"></script>
 </body>
