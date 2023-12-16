@@ -1011,7 +1011,8 @@ img.pcard-img {
   .pcard-img {
     width: 164px !important;
   }
-  .products_load button {
+  .products_load .products-btn { 
+    text-align: center;
     width: 100%;
     font-size: 16px;
     padding: 15px 0;
@@ -1082,7 +1083,18 @@ img.pcard-img {
 
 .about-main {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  /* gap: 100px; */
+}
+
+.about_des{
+  width: 50%;
+}
+
+.about .about_img{
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
 .about img {
@@ -1129,6 +1141,14 @@ img.pcard-img {
   .about .about-main {
     display: block;
     justify-content: space-around;
+  }
+  .about .about_img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about_img, .about_des{
+    width: 100%;
   }
   .about img {
     width: 100%;
