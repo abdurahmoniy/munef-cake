@@ -263,10 +263,11 @@ a {
   border-radius: 12px;
   background-color: rgb(234, 234, 234);
   margin: 15px 0;
+  padding: 0 10px;
 }
 
 .aloqa input::placeholder {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   color: #000;
   opacity: 0.3;
   font-weight: 700;
@@ -877,6 +878,7 @@ a {
 
 img.pcard-img {
   width: 100%;
+  height: 70%;
   border-radius: 15px;
   object-fit: cover;
 }
